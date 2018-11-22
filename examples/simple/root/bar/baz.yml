@@ -1,2 +1,4 @@
-- value1
-- value2
+somekey:
+  - value1
+  - value2
+anotherkey: "Some value"
