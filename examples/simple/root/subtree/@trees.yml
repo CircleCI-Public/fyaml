@@ -1,0 +1,6 @@
+ginkgo:
+  seasonality: deciduous
+oak:
+  seasonality: deciduous
+pine:
+  seasonality: evergreen
