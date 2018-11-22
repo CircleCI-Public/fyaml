@@ -1,0 +1,13 @@
+bar:
+  baz:
+    anotherkey: Some value
+    somekey:
+    - value1
+    - value2
+subtree:
+  ginkgo:
+    seasonality: deciduous
+  oak:
+    seasonality: deciduous
+  pine:
+    seasonality: evergreen

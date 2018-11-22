@@ -15,23 +15,21 @@ FYAML was originally designed as part of the [CirleCI CLI](https://github.com/Ci
 
 Let's say you have the following file system structure:
 ```
-mydir
+examples/simple/root/
 ├── bar
-│   └── baz.yml
-├── foo.yml
+│   └── baz.yml
 └── subtree
     └── @trees.yml
 ```
 
-An FYAML implementation would turn the above into something like the following YAML document:
+An FYAML implementation, when given the path to `examples/simple/root/` as input, would return the following YAML document:
 ```
 bar:
   baz:
+    anotherkey: Some value
+    somekey:
     - value1
     - value2
-foo:
-  some-key: some-value
-  some-otherkey: someother-value
 subtree:
   ginkgo:
     seasonality: deciduous
@@ -42,4 +40,6 @@ subtree:
 ```
 
 ## Where can I learn about the details?
+
+See the [fyaml-specification.md](fyaml-specification.md) file in this repository for details.
 
